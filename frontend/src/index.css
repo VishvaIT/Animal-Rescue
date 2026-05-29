@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-lg rounded-2xl;
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-safe-orange to-safe-blue;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  width: 100%;
+  min-height: 100%;
+  background-color: #0F172A;
+  color: #FFFFFF;
+}
